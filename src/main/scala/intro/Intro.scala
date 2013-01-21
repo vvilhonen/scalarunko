@@ -6,5 +6,5 @@ object Intro extends App {
 }
 
 class Intro {
-	def foo = 1
+  def foo = 1
 }
