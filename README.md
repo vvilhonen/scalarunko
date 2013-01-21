@@ -8,6 +8,7 @@ Opening project in eclipse
 * Install eclipse juno
 * Install everything from update site
   http://download.scala-ide.org/sdk/e38/scala210/dev/site/
+* Close eclipse
 * Run ./sbt eclipse
 * Open project in eclipse
 
