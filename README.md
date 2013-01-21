@@ -4,7 +4,7 @@ Scala skeleton
 Opening project in eclipse
 --------------------------
 
-* Clone repo
+* git clone git://github.com/vvilhonen/scalarunko.git
 * Install eclipse juno
 * Install everything from update site
   http://download.scala-ide.org/sdk/e38/scala210/dev/site/
@@ -15,7 +15,7 @@ Opening project in eclipse
 Opening project in intellij idea
 --------------------------------
 
-* Clone repo
+* git clone git://github.com/vvilhonen/scalarunko.git
 * Install community or ultimate edition of IDEA 12.x
 * Install scala plugin from preferences
 * Run ./sbt 'gen-idea no-sbt-build-module'
