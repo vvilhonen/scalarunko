@@ -27,10 +27,12 @@ class OldSchool(firstName: String, lastName: String, age: Int) {
 
 class Leet(firstName: Option[String], lastName: Option[String], age: Option[Int]) {
   override def toString: String = {
+    val ageDescriptiongFunc = (x: Int) => x + " years old"
+
     val result = for {
       firstNameStr <- firstName
       lastNameStr <- lastName
-      ageStr = age.map(_ + " years old").getOrElse("with age omitted")
+      ageStr = age.map(ageDescriptiongFunc).getOrElse("with age omitted")
     } yield firstNameStr + " " + lastNameStr + " " + ageStr
 
     result.getOrElse("missing required values")

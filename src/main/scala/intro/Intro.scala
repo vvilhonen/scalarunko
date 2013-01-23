@@ -35,14 +35,10 @@ class JdbcTemplate(pool: Pool) {
 
 object Foo {
   def main(args: Array[String]) {
-    val jdbc = new JdbcTemplate(new Pool)
-    val intArvo = jdbc.first[Int]((x) => x)
-    //
-    // List<String> lista = new ArrayList<String>()
-    //val lista: List[String] = List[String]("a")
-
-    //jdbc.first(println(_))
-    //jdbc.first((result) => println(result))
-    //jdbc.first{(result) => println(result)}
+    case class User(name: String, age: Int)
+    val list = List(User("vermas", 53), User("ridge forrester", 130))
+    println(list)
+    val newList = list.map(x => x.copy(age = x.age + 10))
+    println(newList)
   }
 }
